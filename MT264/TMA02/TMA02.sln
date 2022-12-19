@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Reveal", "Reveal\Reveal.vbproj", "{AB80B067-BD2F-45C4-A3D1-B32D5E668101}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MT264BirdsAZ", "MT264Birds\MT264BirdsAZ.vbproj", "{9F04AFC8-9079-47F2-9967-250A1F2075A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AB80B067-BD2F-45C4-A3D1-B32D5E668101}.Release|x86.ActiveCfg = Release|Any CPU
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Debug|x86.ActiveCfg = Debug|x86
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Debug|x86.Build.0 = Debug|x86
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Release|Any CPU.ActiveCfg = Release|x86
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Release|Mixed Platforms.Build.0 = Release|x86
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Release|x86.ActiveCfg = Release|x86
+		{9F04AFC8-9079-47F2-9967-250A1F2075A0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://adamze.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Reveal\\Reveal.vbproj
+		SccProjectName1 = Reveal
+		SccLocalPath1 = Reveal
+		SccProjectUniqueName2 = MT264Birds\\MT264BirdsAZ.vbproj
+		SccProjectName2 = MT264Birds
+		SccLocalPath2 = MT264Birds
+	EndGlobalSection
+EndGlobal

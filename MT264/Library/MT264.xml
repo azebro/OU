@@ -1,0 +1,238 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MT264
+</name>
+</assembly>
+<members>
+<member name="M:MT264.AverageFinder.#ctor">
+	<summary>
+ Constructor
+ Preconditions: none
+ Postconditions: An AverageFinder object has been created 
+ with no numbers yet recorded.
+ </summary>
+	<remarks>Invokes reset() as this does the right things.</remarks>
+</member><member name="M:MT264.AverageFinder.getCount">
+	<summary>
+ Preconditions: none
+ Postconditions: Returns how many numbers have been recorded.
+ </summary>
+	<returns>fCount</returns>
+	<remarks></remarks>
+</member><member name="M:MT264.AverageFinder.getAverage">
+	<summary>
+ Preconditions: none
+ Postconditions: If no numbers have been recorded, "" is 
+ returned, otherwise the average of the recorded numbers,
+ as a string, is returned.
+ </summary>
+	<returns>String representation of average (or empty string)</returns>
+	<remarks>Could return a more informative message
+ when fCount is zero.</remarks>
+</member><member name="M:MT264.AverageFinder.addNumber(System.String)">
+	<summary>
+ Preconditions: none
+ Postconditions: If aNumber is a valid representation of 
+ a number then the corresponding number is recorded; else 
+ nothing is done.
+ </summary>
+	<param name="aNumber">
+ The parameter aNumber should be the string representation
+ of a number to add to the total.</param>
+	<remarks>
+ Converts aNumber to a double, if possible.
+ Silently ignores non-numeric strings.
+ </remarks>
+</member><member name="M:MT264.AverageFinder.reset">
+	<summary>
+ Precondition: none
+ Postcondition: The object has been put back in its 
+ original state with no numbers recorded.
+ </summary>
+	<remarks>
+ This method resets the state of the object
+ and so allows it to be used for finding
+ a number of different averages.
+ It is used by the New() constructor
+ because it does the right thing for that too.
+ </remarks>
+</member><member name="T:MT264.AverageFinder">
+	<summary>
+ This class implements the AverageFinder specified
+ in Block 1, Unit 2.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:MT264.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MT264.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MT264.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:MT264.CharCounter.countChar(System.Char)">
+	<summary>
+ Preconditions: none
+ Postconditions: The number of upper- and lower-case
+ occurrences of the letter aChar in the current string
+ is returned.
+ </summary>
+	<param name="aChar"></param>
+	<returns>The number of upper- and lower-case
+ occurrences of the letter aChar in the current string.
+ </returns>
+	<remarks></remarks>
+</member><member name="M:MT264.CharCounter.#ctor">
+	<summary>
+ Constructor
+ Preconditions: none
+ Postconditions: new instance of CharCounter is created in which
+ the current string is set to the empty string.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:MT264.CharCounter">
+	<summary>
+ This class implements CharCounter as specified in
+ Block 1 Unit 3.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264.TrafficSurvey.#ctor">
+	<summary>
+ Constructor
+ A new instance of TrafficSurvey is created with both vehicle counts set to zero.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264.TrafficSurvey.addCar">
+	<summary>
+ Preconditions: none
+ Postconditions: The number of cars recorded is incremented by one.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264.TrafficSurvey.addBicycle">
+	<summary>
+ Preconditions: none
+ Postconditions: The number of bicycless recorded is incremented by one.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264.TrafficSurvey.getCars">
+	<summary>
+ Preconditions: none
+ Postconditions: an integer whose value is the number of cars recorded
+ is returned.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MT264.TrafficSurvey.getBicycles">
+	<summary>
+ Preconditions: none
+ Postconditions: an integer whose value is the number of bicycles recorded
+ is returned.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MT264.TrafficSurvey">
+	<summary>
+ This class implements TrafficSurvey as specified in 
+ Block 1 Unit 2
+ </summary>
+	<remarks></remarks>
+</member><member name="T:MT264.BirdStatus">
+	<summary>
+ Enumerated type with three values.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:MT264.Bird.Activity">
+	<summary>
+ Set
+ Preconditions: The three image files exist and are
+ valid image files.
+ Postconditions: The bird's activity for the setter 
+ is changed to that given by the parameter value.
+ The current picture is set to that corresponding 
+ to the activity.
+ </summary>
+	<value>fActivity</value>
+	<returns>fActivity</returns>
+	<remarks></remarks>
+</member><member name="M:MT264.Bird.#ctor">
+	<summary>
+ Constructor
+ Preconditions: The image file "Standing.jpg" exists and 
+ is a valid image file.
+ Postconditions: A Bird object that is standing
+ has been created.
+ The current picture is that of a standing bird.
+ </summary>
+	<remarks>The property is used even though this is the constructor
+ as it ensures all the correct processing has been done.</remarks>
+</member><member name="M:MT264.Bird.Dispose">
+	<summary>
+ Preconditions: none
+ Postconditions: The resources used by fCurrentPicture 
+ have been released.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:MT264.Bird">
+	<summary>
+ This class implements the Bird specified in Block 1
+ Unit 3.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MT264.GuessNumber.fChosen">
+	<summary>
+ The value of fChosen is the current number to be guessed.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MT264.GuessNumber.fRandom">
+	<summary>
+ fRandom provides a pseudo-random number generator.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264.GuessNumber.#ctor">
+	<summary>
+ Constructor
+ Preconditions: none
+ Postconditions: A GuessNumber object is created 
+ with the chosen number set to a
+random integer between 1 and 10.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264.GuessNumber.chooseNumber">
+	<summary>
+ Preconditions: none
+ Postconditions: The chosen number is set
+  to a random integer between 1 and 10.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264.GuessNumber.isGuessCorrect(System.Int32)">
+	<summary>
+ Preconditions: none
+ Postconditions: If guess equals the chosen number, True 
+ is returned; otherwise False is returned.
+ </summary>
+	<param name="guess"></param>
+	<returns>fChosen=guess</returns>
+	<remarks></remarks>
+</member><member name="M:MT264.GuessNumber.getNumber">
+	<summary>
+ Preconditions: none
+ Postconditions: The value of the chosen number is returned.
+ </summary>
+	<returns>fChosen</returns>
+	<remarks></remarks>
+</member><member name="T:MT264.GuessNumber">
+	<summary>
+ This class implements GuessNumber as specified in
+ Block 1 Unit 2.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

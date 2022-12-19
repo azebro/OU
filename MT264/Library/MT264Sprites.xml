@@ -1,0 +1,239 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MT264Sprites
+</name>
+</assembly>
+<members>
+<member name="P:MT264Sprites.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MT264Sprites.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MT264Sprites.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:MT264Sprites.HVSprite.#ctor">
+	<summary>
+ Preconditions: none
+ Postconditions: An HVSprite object is created setting Position
+ to (0, 0), Width and Height to 50, and XMove and YMove to 0.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.HVSprite.#ctor(System.Drawing.Point,System.Int32,System.Int32)">
+	<summary>
+ Preconditions: none
+ Postconditions: An HVSprite object is created setting Position
+ to position, Width and Height to width and height respectively,
+ and XMove and YMove to 0.
+ </summary>
+	<param name="pos"></param>
+	<param name="w"></param>
+	<param name="h"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.HVSprite.#ctor(System.Drawing.Point,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Preconditions: none
+ Postconditions: An HVSprite object is created setting Position
+ to position, Width and Height to width and height respectively,
+ and XMove and YMove to xMove and yMove respectively.
+ </summary>
+	<param name="pos"></param>
+	<param name="w"></param>
+	<param name="h"></param>
+	<param name="xInc"></param>
+	<param name="yInc"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.HVSprite.draw(System.Drawing.Graphics)">
+	<summary>
+ Preconditions: none
+ Postconditions: A representation of the sprite is drawn on g at
+ Position, of Width and Height.
+ </summary>
+	<param name="g"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.HVSprite.goUp(System.Int32)">
+	<summary>
+ Preconditions: y &gt;= 0.
+ Postconditions: The sprite's unit of movement is set to 0 in the
+ x-direction and to (-1) * y in the y-direction.
+ </summary>
+	<param name="y"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.HVSprite.goDown(System.Int32)">
+	<summary>
+ Preconditions: y &gt;= 0.
+ Postconditions: The sprite's unit of movement is set to 0 in the
+ x-direction and to y in the y-direction.
+ </summary>
+	<param name="y"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.HVSprite.goLeft(System.Int32)">
+	<summary>
+ Preconditions: x &gt;= 0.
+ Postconditions: The sprite's unit of movement is set to 0 in the
+ y-direction and to (-1) * x in the x-direction.
+ </summary>
+	<param name="x"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.HVSprite.goRight(System.Int32)">
+	<summary>
+ Preconditions: x &gt;= 0.
+ Postconditions: The sprite's unit of movement is set to 0 in the
+ y-direction and to x in the x-direction.
+ </summary>
+	<param name="x"></param>
+	<remarks></remarks>
+</member><member name="T:MT264Sprites.HVSprite">
+	<summary>
+ Implements the HVSprite class from Unit 9.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MT264Sprites.BaseSprite.fPosition">
+	<summary>
+ This class is an abstract base class for
+ moving sprites. It cannot be instantiated and
+ you should create appropriate classes inheriting from it.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.BaseSprite.setup(System.Drawing.Point,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ A utility method for use by the various constructors.
+ Preconditions: w &gt; 0 and h &gt; 0
+ Postconditions: Sets up the properties according to its parameter values.
+ </summary>
+	<param name="pos"></param>
+	<param name="w"></param>
+	<param name="h"></param>
+	<param name="xInc"></param>
+	<param name="yInc"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.BaseSprite.#ctor">
+	<summary>
+ Preconditions: none
+ Postconditions: This default constructor sets Position to (0, 0),
+ XMove and YMove to 0 and Width and Height arbitrarily to 50.
+ </summary>
+	<remarks>Where possible you
+ should always use a parametrised constructor.</remarks>
+</member><member name="M:MT264Sprites.BaseSprite.#ctor(System.Drawing.Point,System.Int32,System.Int32)">
+	<summary>
+ Preconditions: w &gt; 0 and h &gt; 0
+ Postconditions: This constructor sets Position to pos, Width to w
+ and Height to h. XMove and YMove are set to 0.
+ </summary>
+	<param name="pos">Initial value of the sprite's base point</param>
+	<param name="w">Width of sprite</param>
+	<param name="h">Height of sprite</param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.BaseSprite.#ctor(System.Drawing.Point,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Preconditions: w &gt; 0 and h &gt; 0
+ Postconditions: This constructor sets Position to pos, Width to w,
+ Height to h, XMove to xInc and YMove to yInc.
+ </summary>
+	<param name="pos">Initial position</param>
+	<param name="w">Width</param>
+	<param name="h">Height</param>
+	<param name="xInc">Initial horizontal movement increment</param>
+	<param name="yInc">Initial vertical movement increment</param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.BaseSprite.setMovement(System.Int32,System.Int32)">
+	<summary>
+ Preconditions: none
+ Postconditions: XMove is set to xInc and YMove is set to yInc.
+ </summary>
+	<param name="xInc">Horizontal movement increment</param>
+	<param name="yInc">Vertical movement increment</param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.BaseSprite.move">
+	<summary>
+ Preconditions: none
+ Postconditions: the sprite is moved by (XMove, YMove).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.BaseSprite.draw(System.Drawing.Graphics)">
+	<summary>
+ Preconditions: g must be a valid Graphics object.
+ Postconditions: a representation of the sprite
+ is drawn on g at location Position with width,
+ Width and height, Height.
+ </summary>
+	<param name="g">The Canvas object on which the
+ sprite must draw itself. Usually obtained from
+ a Paint event handler.</param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.TargetSprite.#ctor">
+	<summary>
+ Preconditions: none
+ Postconditions: A TargetSprite object is created setting Position
+ to (0, 0), Width and Height to 50, and XMove and YMove to 0.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.TargetSprite.#ctor(System.Drawing.Point,System.Int32,System.Int32)">
+	<summary>
+ Preconditions: none
+ Postconditions: A TargetSprite object is created setting Position
+ to position, Width and Height to width and height respectively,
+ and XMove and YMove to 0.
+ </summary>
+	<param name="pos"></param>
+	<param name="w"></param>
+	<param name="h"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.TargetSprite.#ctor(System.Drawing.Point,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Preconditions: none
+ Postconditions: A TargetSprite object is created setting Position
+ to position, Width and Height to width and height respectively,
+ and XMove and YMove to xMove and yMove respectively.
+ </summary>
+	<param name="pos"></param>
+	<param name="w"></param>
+	<param name="h"></param>
+	<param name="xInc"></param>
+	<param name="yInc"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.TargetSprite.draw(System.Drawing.Graphics)">
+	<summary>
+ Preconditions: none
+ Postconditions: A representation of the sprite is drawn on g at
+ Position, of Width and Height.
+ </summary>
+	<param name="g"></param>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.TargetSprite.isHit(System.Drawing.Point)">
+	<summary>
+ Preconditions: none
+ Postconditions: True is returned if clickPos lies within the sprite’s bounding
+ rectangle. Otherwise False is returned.
+ </summary>
+	<param name="clickPos"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.TargetSprite.reflectX">
+	<summary>
+ Preconditions: none
+ Postconditions: The sprite’s movement is reflected by a vertical boundary.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:MT264Sprites.TargetSprite.reflectY">
+	<summary>
+ Preconditions: none
+ Postconditions: The sprite’s movement is reflected by a horizontal boundary.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:MT264Sprites.TargetSprite">
+	<summary>
+ Implements the TargetSprite class from Unit 12.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

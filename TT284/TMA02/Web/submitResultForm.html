@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=iso-8859-1"/>
+    <script src="submitResultScripts.js"></script>
+    
+
+<title>Submit a runner time</title>
+</head>
+<body>
+<hr/>
+<h1>Submit a runner time</h1>
+<hr/>
+Note: all fields marked '*' are mandatory.
+<p/>
+    <form action="http://az2267.tt284.open.ac.uk/b2files/postResults.php"
+          method="post" name="submitrunnertime"
+          onsubmit="return validate();">
+        <table>
+            <tr>
+                <td>Runner ID*</td>
+                <td><input type="text" name="RunnerID" id="runnerId" size="4" maxlength="4" /></td>
+            </tr>
+            <tr>
+                <td>Event ID*</td>
+                <td><input type="text" name="EventID" id="eventId" size="4" maxlength="4" /></td>
+            </tr>
+            <tr>
+                <td>Date (YYYY-MM-DD)*</td>
+                <td><input type="text" name="Date" size="10" id="date" maxlength="10" /></td>
+            </tr>
+            <tr>
+                <td>Finish time (HH:MM:SS)*</td>
+                <td><input type="text" name="FinishTime" size="8" id="finishTime" maxlength="8" /></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td><input type="text" name="Position" size="5" id="position" maxlength="5" /></td>
+            </tr>
+            <tr>
+                <td>Category ID</td>
+                <td><input type="text" name="CategoryID" size="3" id="categoryId" maxlength="2" /></td>
+            </tr>
+            <tr>
+                <td>Age grade</td>
+                <td><input type="text" name="AgeGrade" size="5" id="ageGrade" maxlength="5" /></td>
+            </tr>
+            <tr>
+                <td>Personal best</td>
+                <td><input type="text" name="PB" size="1" id="personalBest" maxlength="1" /></td>
+            </tr>
+        </table>
+        <input type="submit" name="submitrunnertime" value="submit" />
+        <hr />
+    </form>
+</body>
+</html>
+
